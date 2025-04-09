@@ -1,0 +1,52 @@
+descriptions for deep linking inside website
+
+1) add .well-known/assetlinks.json inside public
+and add below code 
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.stadioss.stadioss",
+      "sha256_cert_fingerprints": [
+        "FA:C6:17:45:DC:09:03:78:6F:B9:ED:E6:2A:96:2B:39:9F:73:48:F0:BB:6F:89:9B:83:32:66:75:91:03:3B:9C",
+        "FA:C6:17:45:DC:09:03:78:6F:B9:ED:E6:2A:96:2B:39:9F:73:48:F0:BB:6F:89:9B:83:32:66:75:91:03:3B:9C"
+      ]
+    }
+  }
+]
+
+2) com.stadioss.stadioss will be package name inside mobile-app/app.json/  "package": "com.abdulwajidafridi.deeplinking"
+3) for sha256_cert_fingerprints key we need few commands.
+4) npx expo run android then go to cd android then use this (./gradlew signingReport)
+5) this will generate lots of keys but you need the first two 1)debug and 2)release
+6) you need to get both SHA-256 from debug and release.
+
+
+7) then you need to go to app.json and inside android section 
+past this.
+"intentFilters": [
+        {
+          "action": "VIEW",
+          "autoVerify": true,
+          "data": [
+            {
+              "scheme": "https",
+              "host": "stadioss-deeplinking-plum.vercel.app",
+              "pathPrefix": "/posts"
+            },
+            {
+              "scheme": "https",
+              "host": "stadioss-deeplinking-plum.vercel.app",
+              "pathPrefix": "/posts/*"
+            }
+          ],
+          "category": ["BROWSABLE", "DEFAULT"]
+        }
+      ],
+
+      if yu hit https://stadioss-deeplinking-plum.vercel.app this link it will open web while https://stadioss-deeplinking-plum.vercel.app/posts will open app because it has the linking added
+      
+      you can add more as above
+
+      
