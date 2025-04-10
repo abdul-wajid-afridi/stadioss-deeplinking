@@ -34,7 +34,16 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
         <meta
           name="apple-itunes-app"
-          content="app-id=8xc2322sn2, app-argument=https://themasjidappmobilev2/More"
+          content="app-id=8xc2322sn2, app-argument=https://stadioss-deeplinking-plum.vercel.app/"
+        />
+
+        {/* Android Smart App Banner */}
+        <link
+          rel="alternate"
+          href="https://stadioss-deeplinking-plum.vercel.app/"
+          // href=" themasjidappv2://"
+
+          // href="android-app://YOUR_PACKAGE_NAME/YOUR_CUSTOM_URL_SCHEME"
         />
 
         {/* <meta name="apple-itunes-app" content="app-id=BHB9D2VU5J" />
