@@ -1,0 +1,12 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appID": "BHB9D2VU5J.stadioss-deeplinking-plum.vercel.app",
+        "paths": [
+          "/(tabs)/home/*"
+        ]
+      }
+    ]
+  }
+}
