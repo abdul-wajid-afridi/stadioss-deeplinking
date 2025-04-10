@@ -29,9 +29,17 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <title>fix user phones</title>
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="apple-itunes-app" content="app-id=BHB9D2VU5J" />
         <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+
+        <meta
+          name="apple-itunes-app"
+          content="app-id=8xc2322sn2, app-argument=https://themasjidappmobilev2/More"
+        />
+
+        {/* <meta name="apple-itunes-app" content="app-id=BHB9D2VU5J" />
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" /> */}
         <Meta />
         <Links />
       </head>
