@@ -79,6 +79,7 @@ function Layout({ children }: { children: ReactNode }) {
     <html lang="en">
       <head>
         <title>fix user phones</title>
+        <meta name="apple-itunes-app" content="app-id=BHB9D2VU5J" />
         <Meta />
       </head>
       <div className="flex h-screen items-center justify-center">
