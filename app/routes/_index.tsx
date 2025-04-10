@@ -33,7 +33,7 @@
 // }
 
 const HomeMainPage = () => {
-  return <div>HomeMainPage</div>;
+  return <div>HomeMainPage manifest</div>;
 };
 
 export default HomeMainPage;
