@@ -7,6 +7,9 @@ import {
 } from "@remix-run/react";
 import type { LinksFunction } from "@remix-run/node";
 
+import SmartBanner from "react-smartbanner";
+import "react-smartbanner/dist/main.css";
+
 import "./tailwind.css";
 
 export const links: LinksFunction = () => [
@@ -55,6 +58,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <body>
         {children}
         <ScrollRestoration />
+        <SmartBanner title={"Facebook"} />
         <Scripts />
       </body>
     </html>
