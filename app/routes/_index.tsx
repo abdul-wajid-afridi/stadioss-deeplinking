@@ -33,7 +33,7 @@
 // }
 
 const HomeMainPage = () => {
-  return <div>HomeMainPage manifest</div>;
+  return <div>HomeMainPage manifest medias</div>;
 };
 
 export default HomeMainPage;
